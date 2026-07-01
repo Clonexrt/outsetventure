@@ -5,27 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Outset Venture | Premium Domain Brokerage</title>
 
-  <!-- ✅ Meta SEO -->
   <meta name="description" content="Outset Venture is a premium domain brokerage that acquires and sells valuable digital assets to help brands secure their ideal online identity.">
   <meta name="keywords" content="domain names, domain brokerage, premium domains, buy domains, sell domains, domain acquisition, Outset Venture">
 
-  <!-- ✅ Open Graph (LinkedIn, Facebook) -->
   <meta property="og:title" content="Outset Venture | Premium Domain Brokerage" />
   <meta property="og:description" content="We acquire and sell premium domain names for brands and startups worldwide." />
   <meta property="og:image" content="https://outsetventure.com/favicon.png" />
   <meta property="og:url" content="https://outsetventure.com" />
   <meta property="og:type" content="website" />
 
-  <!-- ✅ Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Outset Venture | Premium Domain Brokerage">
   <meta name="twitter:description" content="Helping startups and brands secure their perfect domain name.">
   <meta name="twitter:image" content="https://outsetventure.com/favicon.png">
 
-  <!-- ✅ Favicon -->
   <link rel="icon" type="image/png" href="favicon.png">
 
-  <!-- ✅ Tailwind -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
   <style>
@@ -43,122 +38,211 @@
     }
   </style>
 </head>
-<body class="bg-white text-gray-800 font-sans">
+<body class="bg-gray-50 text-gray-800 font-sans relative">
 
-  <!-- Header -->
-  <header class="flex justify-between items-center py-6 px-8 shadow-sm bg-white">
+  <header class="flex justify-between items-center py-6 px-8 shadow-sm bg-white relative z-20">
     <div class="text-3xl font-semibold tracking-tight">
       <span class="text-blue-900">Outset</span><span class="text-yellow-500">Venture</span>
     </div>
-    <nav class="space-x-6 hidden md:flex">
-      <a href="#about" class="text-gray-700 hover:text-blue-900">About</a>
-      <a href="#domains" class="text-gray-700 hover:text-blue-900">Domains</a>
-      <a href="#contact" class="text-gray-700 hover:text-blue-900">Contact</a>
+    
+    <nav class="space-x-8 hidden md:flex">
+      <a href="#about" class="text-gray-700 font-medium hover:text-blue-900 transition">About</a>
+      <a href="#domains" class="text-gray-700 font-medium hover:text-blue-900 transition">Domains</a>
+      <a href="#contact" class="text-gray-700 font-medium hover:text-blue-900 transition">Contact</a>
     </nav>
+
+    <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    </button>
   </header>
 
-  <!-- Hero -->
-  <section class="text-center py-24 px-6 bg-gray-50 fade-in">
-    <h1 class="text-4xl md:text-5xl font-bold text-blue-900">We Acquire and Sell Premium Domain Names</h1>
-    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+  <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md absolute w-full left-0 z-10 border-t border-gray-100">
+    <a href="#about" class="block py-4 px-8 text-gray-700 font-medium hover:bg-gray-50 border-b border-gray-100">About</a>
+    <a href="#domains" class="block py-4 px-8 text-gray-700 font-medium hover:bg-gray-50 border-b border-gray-100">Domains</a>
+    <a href="#contact" class="block py-4 px-8 text-gray-700 font-medium hover:bg-gray-50">Contact</a>
+  </div>
+
+  <section class="text-center py-24 px-6 bg-white fade-in">
+    <h1 class="text-4xl md:text-5xl font-bold text-blue-900 leading-tight">We Acquire and Sell Premium Domain Names</h1>
+    <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
       Helping startups, entrepreneurs, and established companies secure their ideal digital identity.
     </p>
-    <a href="#domains" class="mt-8 inline-block bg-blue-900 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition">
-      View Domains
+    <a href="#domains" class="mt-10 inline-block bg-blue-900 text-white font-medium px-8 py-3 rounded-lg hover:bg-blue-800 transition shadow-sm hover:shadow-md">
+      View Available Domains
     </a>
   </section>
 
-  <!-- About -->
-  <section id="about" class="py-20 px-8 text-center max-w-4xl mx-auto fade-in">
+  <section id="about" class="py-24 px-8 text-center max-w-4xl mx-auto fade-in">
     <h2 class="text-3xl font-bold text-blue-900 mb-6">About Outset Venture</h2>
-    <p class="text-gray-700 leading-relaxed">
+    <p class="text-gray-700 text-lg leading-relaxed">
       Outset Venture is a premium domain brokerage specializing in acquiring and selling valuable digital assets. 
       We help brands, startups, and investors secure the perfect domain name to strengthen their online presence and credibility.
     </p>
   </section>
 
-  <!-- Domains -->
-  <section id="domains" class="py-20 px-8 bg-gray-50 fade-in">
-    <h2 class="text-3xl font-bold text-blue-900 text-center mb-10">Featured Domains</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+  <section id="domains" class="py-24 px-8 bg-gray-100 fade-in border-t border-b border-gray-200">
+    <h2 class="text-3xl font-bold text-blue-900 text-center mb-4">Featured Domains</h2>
+    <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Browse our current portfolio of premium, brandable domain names available for immediate acquisition.</p>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
-      <div class="border rounded-xl p-6 text-center bg-white shadow-sm hover:shadow-md transition">
-        <h3 class="text-lg font-semibold text-gray-800">ReminderMarketing.com</h3>
-        <a href="#contact" class="text-blue-900 font-medium hover:underline mt-2 block">Inquire</a>
+      <div class="border border-gray-200 rounded-xl p-8 text-center bg-white shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between h-full">
+        <div>
+          <span class="inline-block bg-blue-100 text-blue-900 text-xs px-3 py-1 rounded-full mb-4 font-bold tracking-wider uppercase">Marketing</span>
+          <h3 class="text-xl font-bold text-gray-900">ReminderMarketing.com</h3>
+          <p class="text-gray-500 mt-2 font-medium">Make Offer</p>
+        </div>
+        <a href="#contact" class="mt-8 w-full inline-block bg-white text-blue-900 font-semibold py-3 rounded-lg hover:bg-blue-900 hover:text-white transition border-2 border-blue-900">Inquire Now</a>
       </div>
 
-      <div class="border rounded-xl p-6 text-center bg-white shadow-sm hover:shadow-md transition">
-        <h3 class="text-lg font-semibold text-gray-800">MontrealFilm.com</h3>
-        <a href="#contact" class="text-blue-900 font-medium hover:underline mt-2 block">Inquire</a>
+      <div class="border border-gray-200 rounded-xl p-8 text-center bg-white shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between h-full">
+        <div>
+          <span class="inline-block bg-blue-100 text-blue-900 text-xs px-3 py-1 rounded-full mb-4 font-bold tracking-wider uppercase">Media / Entertainment</span>
+          <h3 class="text-xl font-bold text-gray-900">MontrealFilm.com</h3>
+          <p class="text-gray-500 mt-2 font-medium">Make Offer</p>
+        </div>
+        <a href="#contact" class="mt-8 w-full inline-block bg-white text-blue-900 font-semibold py-3 rounded-lg hover:bg-blue-900 hover:text-white transition border-2 border-blue-900">Inquire Now</a>
       </div>
 
-      <div class="border rounded-xl p-6 text-center bg-white shadow-sm hover:shadow-md transition">
-        <h3 class="text-lg font-semibold text-gray-800">CTHomeFinder.com</h3>
-        <a href="#contact" class="text-blue-900 font-medium hover:underline mt-2 block">Inquire</a>
+      <div class="border border-gray-200 rounded-xl p-8 text-center bg-white shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between h-full">
+        <div>
+          <span class="inline-block bg-blue-100 text-blue-900 text-xs px-3 py-1 rounded-full mb-4 font-bold tracking-wider uppercase">Real Estate</span>
+          <h3 class="text-xl font-bold text-gray-900">CTHomeFinder.com</h3>
+          <p class="text-gray-500 mt-2 font-medium">Make Offer</p>
+        </div>
+        <a href="#contact" class="mt-8 w-full inline-block bg-white text-blue-900 font-semibold py-3 rounded-lg hover:bg-blue-900 hover:text-white transition border-2 border-blue-900">Inquire Now</a>
       </div>
 
-      <div class="border rounded-xl p-6 text-center bg-white shadow-sm hover:shadow-md transition">
-        <h3 class="text-lg font-semibold text-gray-800">MonsterLead.com</h3>
-        <a href="#contact" class="text-blue-900 font-medium hover:underline mt-2 block">Inquire</a>
+      <div class="border border-gray-200 rounded-xl p-8 text-center bg-white shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between h-full">
+        <div>
+          <span class="inline-block bg-blue-100 text-blue-900 text-xs px-3 py-1 rounded-full mb-4 font-bold tracking-wider uppercase">B2B / Sales</span>
+          <h3 class="text-xl font-bold text-gray-900">MonsterLead.com</h3>
+          <p class="text-gray-500 mt-2 font-medium">Make Offer</p>
+        </div>
+        <a href="#contact" class="mt-8 w-full inline-block bg-white text-blue-900 font-semibold py-3 rounded-lg hover:bg-blue-900 hover:text-white transition border-2 border-blue-900">Inquire Now</a>
       </div>
 
-      <div class="border rounded-xl p-6 text-center bg-white shadow-sm hover:shadow-md transition">
-        <h3 class="text-lg font-semibold text-gray-800">Smatchit.com</h3>
-        <a href="#contact" class="text-blue-900 font-medium hover:underline mt-2 block">Inquire</a>
+      <div class="border border-gray-200 rounded-xl p-8 text-center bg-white shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between h-full">
+        <div>
+          <span class="inline-block bg-blue-100 text-blue-900 text-xs px-3 py-1 rounded-full mb-4 font-bold tracking-wider uppercase">Tech / App</span>
+          <h3 class="text-xl font-bold text-gray-900">Smatchit.com</h3>
+          <p class="text-gray-500 mt-2 font-medium">Make Offer</p>
+        </div>
+        <a href="#contact" class="mt-8 w-full inline-block bg-white text-blue-900 font-semibold py-3 rounded-lg hover:bg-blue-900 hover:text-white transition border-2 border-blue-900">Inquire Now</a>
       </div>
 
-      <div class="border rounded-xl p-6 text-center bg-white shadow-sm hover:shadow-md transition">
-        <h3 class="text-lg font-semibold text-gray-800">VinaCompany.com</h3>
-        <a href="#contact" class="text-blue-900 font-medium hover:underline mt-2 block">Inquire</a>
+      <div class="border border-gray-200 rounded-xl p-8 text-center bg-white shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between h-full">
+        <div>
+          <span class="inline-block bg-blue-100 text-blue-900 text-xs px-3 py-1 rounded-full mb-4 font-bold tracking-wider uppercase">Corporate</span>
+          <h3 class="text-xl font-bold text-gray-900">VinaCompany.com</h3>
+          <p class="text-gray-500 mt-2 font-medium">Make Offer</p>
+        </div>
+        <a href="#contact" class="mt-8 w-full inline-block bg-white text-blue-900 font-semibold py-3 rounded-lg hover:bg-blue-900 hover:text-white transition border-2 border-blue-900">Inquire Now</a>
       </div>
 
-      <div class="border rounded-xl p-6 text-center bg-white shadow-sm hover:shadow-md transition">
-        <h3 class="text-lg font-semibold text-gray-800">HonestHammer.com</h3>
-        <a href="#contact" class="text-blue-900 font-medium hover:underline mt-2 block">Inquire</a>
+      <div class="border border-gray-200 rounded-xl p-8 text-center bg-white shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between h-full">
+        <div>
+          <span class="inline-block bg-blue-100 text-blue-900 text-xs px-3 py-1 rounded-full mb-4 font-bold tracking-wider uppercase">Home Services</span>
+          <h3 class="text-xl font-bold text-gray-900">HonestHammer.com</h3>
+          <p class="text-gray-500 mt-2 font-medium">Make Offer</p>
+        </div>
+        <a href="#contact" class="mt-8 w-full inline-block bg-white text-blue-900 font-semibold py-3 rounded-lg hover:bg-blue-900 hover:text-white transition border-2 border-blue-900">Inquire Now</a>
       </div>
 
-      <div class="border rounded-xl p-6 text-center bg-white shadow-sm hover:shadow-md transition">
-        <h3 class="text-lg font-semibold text-gray-800">Growth-HQ.com</h3>
-        <a href="#contact" class="text-blue-900 font-medium hover:underline mt-2 block">Inquire</a>
+      <div class="border border-gray-200 rounded-xl p-8 text-center bg-white shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between h-full">
+        <div>
+          <span class="inline-block bg-blue-100 text-blue-900 text-xs px-3 py-1 rounded-full mb-4 font-bold tracking-wider uppercase">Business / SaaS</span>
+          <h3 class="text-xl font-bold text-gray-900">Growth-HQ.com</h3>
+          <p class="text-gray-500 mt-2 font-medium">Make Offer</p>
+        </div>
+        <a href="#contact" class="mt-8 w-full inline-block bg-white text-blue-900 font-semibold py-3 rounded-lg hover:bg-blue-900 hover:text-white transition border-2 border-blue-900">Inquire Now</a>
       </div>
 	  
-	   <div class="border rounded-xl p-6 text-center bg-white shadow-sm hover:shadow-md transition">
-        <h3 class="text-lg font-semibold text-gray-800">OneShotAi.com</h3>
-        <a href="#contact" class="text-blue-900 font-medium hover:underline mt-2 block">Inquire</a>
+	  <div class="border border-gray-200 rounded-xl p-8 text-center bg-white shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between h-full">
+        <div>
+          <span class="inline-block bg-blue-100 text-blue-900 text-xs px-3 py-1 rounded-full mb-4 font-bold tracking-wider uppercase">Artificial Intelligence</span>
+          <h3 class="text-xl font-bold text-gray-900">OneShotAi.com</h3>
+          <p class="text-gray-500 mt-2 font-medium">Make Offer</p>
+        </div>
+        <a href="#contact" class="mt-8 w-full inline-block bg-white text-blue-900 font-semibold py-3 rounded-lg hover:bg-blue-900 hover:text-white transition border-2 border-blue-900">Inquire Now</a>
       </div>
 	  
-	   <div class="border rounded-xl p-6 text-center bg-white shadow-sm hover:shadow-md transition">
-        <h3 class="text-lg font-semibold text-gray-800">AbcMemory.com.com</h3>
-        <a href="#contact" class="text-blue-900 font-medium hover:underline mt-2 block">Inquire</a>
+	  <div class="border border-gray-200 rounded-xl p-8 text-center bg-white shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between h-full">
+        <div>
+          <span class="inline-block bg-blue-100 text-blue-900 text-xs px-3 py-1 rounded-full mb-4 font-bold tracking-wider uppercase">Education / Tech</span>
+          <h3 class="text-xl font-bold text-gray-900">AbcMemory.com</h3>
+          <p class="text-gray-500 mt-2 font-medium">Make Offer</p>
+        </div>
+        <a href="#contact" class="mt-8 w-full inline-block bg-white text-blue-900 font-semibold py-3 rounded-lg hover:bg-blue-900 hover:text-white transition border-2 border-blue-900">Inquire Now</a>
       </div>
 	  
-	    <div class="border rounded-xl p-6 text-center bg-white shadow-sm hover:shadow-md transition">
-        <h3 class="text-lg font-semibold text-gray-800">BloomAndGloom.com</h3>
-        <a href="#contact" class="text-blue-900 font-medium hover:underline mt-2 block">Inquire</a>
+	  <div class="border border-gray-200 rounded-xl p-8 text-center bg-white shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between h-full">
+        <div>
+          <span class="inline-block bg-blue-100 text-blue-900 text-xs px-3 py-1 rounded-full mb-4 font-bold tracking-wider uppercase">Lifestyle / E-Commerce</span>
+          <h3 class="text-xl font-bold text-gray-900">BloomAndGloom.com</h3>
+          <p class="text-gray-500 mt-2 font-medium">Make Offer</p>
+        </div>
+        <a href="#contact" class="mt-8 w-full inline-block bg-white text-blue-900 font-semibold py-3 rounded-lg hover:bg-blue-900 hover:text-white transition border-2 border-blue-900">Inquire Now</a>
       </div>
 
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="py-20 px-8 text-center fade-in">
+  <section id="contact" class="py-24 px-8 text-center bg-white fade-in">
     <h2 class="text-3xl font-bold text-blue-900 mb-6">Get in Touch</h2>
-    <p class="text-gray-700 mb-10">
+    <p class="text-gray-700 text-lg mb-10 max-w-2xl mx-auto">
       Interested in one of our domains or want to discuss a potential acquisition?  
-      Send us a message below.
+      Send us a message below and we will get back to you promptly.
     </p>
-    <form action="https://formspree.io/f/xwpravyk" method="POST" class="max-w-md mx-auto space-y-4">
-      <input type="text" name="name" placeholder="Your Name" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-900">
-      <input type="email" name="_replyto" placeholder="Your Email" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-900">
-      <textarea name="message" placeholder="Your Message" required class="w-full border border-gray-300 rounded-lg px-4 py-2 h-32 focus:outline-none focus:ring-2 focus:ring-blue-900"></textarea>
-      <button type="submit" class="bg-blue-900 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition">Send Message</button>
+    
+    <form action="https://formspree.io/f/xwpravyk" method="POST" class="max-w-lg mx-auto space-y-6 text-left">
+      <div>
+        <label class="block text-gray-700 font-medium mb-2 text-sm" for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-transparent transition bg-gray-50">
+      </div>
+      
+      <div>
+        <label class="block text-gray-700 font-medium mb-2 text-sm" for="email">Your Email</label>
+        <input type="email" id="email" name="_replyto" placeholder="john@example.com" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-transparent transition bg-gray-50">
+      </div>
+      
+      <div>
+        <label class="block text-gray-700 font-medium mb-2 text-sm" for="message">Message & Inquiry</label>
+        <textarea id="message" name="message" placeholder="I am interested in acquiring..." required class="w-full border border-gray-300 rounded-lg px-4 py-3 h-32 focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-transparent transition bg-gray-50 resize-none"></textarea>
+      </div>
+      
+      <button type="submit" class="w-full bg-blue-900 text-white font-semibold text-lg px-6 py-4 rounded-lg hover:bg-blue-800 transition shadow-md">Send Message</button>
     </form>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-blue-900 text-white py-6 text-center">
+  <footer class="bg-gray-900 text-gray-400 py-8 text-center border-t border-gray-800">
+    <div class="mb-4">
+      <span class="text-xl font-semibold tracking-tight text-white">Outset<span class="text-yellow-500">Venture</span></span>
+    </div>
     <p>© 2026 Outset Venture. All Rights Reserved.</p>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const btn = document.getElementById('mobile-menu-btn');
+      const menu = document.getElementById('mobile-menu');
+      const menuLinks = menu.querySelectorAll('a');
+
+      // Toggle menu visibility when clicking the hamburger icon
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+
+      // Hide the menu automatically when a link is clicked
+      menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          menu.classList.add('hidden');
+        });
+      });
+    });
+  </script>
 
 </body>
 </html>
